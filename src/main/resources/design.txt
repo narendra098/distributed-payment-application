@@ -1,0 +1,11 @@
+Client Request
+      ↓
+PaymentController (REST API)
+      ↓
+PaymentService (Business Logic + Resilience4j)
+      ↓
+Kafka Producer → payment-topic
+      ↓
+Kafka Consumer (Payment Processor)
+      ↓
+PostgreSQL (source of truth) + Redis (cache)
