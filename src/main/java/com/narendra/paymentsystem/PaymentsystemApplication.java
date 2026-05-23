@@ -2,8 +2,10 @@ package com.narendra.paymentsystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
 public class PaymentsystemApplication {
 
     // idem potent
@@ -30,12 +32,6 @@ public class PaymentsystemApplication {
      to set deletion time to 5 mins:
      rpk topic alter-config payment-topic --set retention.ms=300000
 
-     postgre:
-     psql -h localhost -U narendra -d paymentdb
-     to show all tables: \dt
-     to view table data: select * from payment
-     q to quit the table data view
-     */
 
     /**
      create a Kafka topic:
@@ -57,6 +53,11 @@ public class PaymentsystemApplication {
      CREATE DATABASE
      CREATE ROLE
      GRANT
+
+     psql -h localhost -U narendra -d paymentdb
+     to show all tables: \dt
+     to view table data: select * from payment
+     q to quit the table data view
      */
 	public static void main(String[] args) {
 		SpringApplication.run(PaymentsystemApplication.class, args);
