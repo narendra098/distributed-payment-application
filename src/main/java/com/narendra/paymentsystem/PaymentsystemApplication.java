@@ -8,8 +8,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class PaymentsystemApplication {
 
-    // idem potent
-
     /**
      open Windows terminal as admin execute "wsl" command
      then to start redis: service redis-server start
