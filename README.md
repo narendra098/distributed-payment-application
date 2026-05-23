@@ -1,4 +1,4 @@
-# Distributed Payment Application
+# Distributed RealTime Payment Application
 
 A production-inspired distributed wallet-to-wallet payment system built using Spring Boot, Kafka, Redis, and PostgreSQL.
 
